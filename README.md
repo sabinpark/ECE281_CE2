@@ -63,4 +63,27 @@ These results may be compared with the truth table above or the waveform below.
 
 The three inputs, I0, I1, and EN are represented by the count signal, and therefore are not shown to actually take in the input values for the simulation.
 
+## Behavioral Decoder
+The decoder was made once more using behavioral programming techniques.  A new module was created which implemented the behavioral architecture.  This was relatively simple to do by following the provided circuit schematic.  I coded in the connections part of the module as shown below.
 
+```vhdl
+	I0_NOT <= not I0;
+	I1_NOT <= not I1;
+	Y0 <= I0_NOT and I1_NOT and EN;
+	Y1 <= I0 and I1_NOT and EN;
+	Y2 <= I0_NOT and I1 and EN;
+	Y3 <= I0 and I1 and EN;
+```
+
+Afterwards, I created a test bench for the behavioral decoder.  I used the same code from the test bench used by the structural decoder.  As expected, the results were the same.  Below are images of the behavioral test bench showing that the results are indeed the same.
+
+## Behavioral Decoder Results
+![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Behavioral%20Simulation%20Results.PNG "Behavioral Decoder Results")
+
+## Behavioral Decoder Waveform
+![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Behavioral%20Simulation%20Waveform.PNG "Behavioral Decoder Waveform")
+
+## Conclusion
+To review, a decoder is a device that takes in inputs, converts the inputs and returns unique output values.  The third input, EN, stands for enabler.  The enabler is used to limit, or distinguish the unique outputs.  If EN is 0, then the entire output will have to be 0 as well because all of the AND gates are connected to the enabler.  By connecting the enabler with each of the other inputs and utilizing the two NOT gates, we have a way to return three unique outputs.
+
+Decoders are used in numerous ways.  If certain information is encoded, the decoder can take the information and return the original information before it was encoded.  For example, this process is used by cable TV companies who only want to allow pay-per-view customers to have access to a movie or TV show.  The streaming of the movie/show is encoded by the company and the viewer's decoder will return the decoded/viewable movie/show.

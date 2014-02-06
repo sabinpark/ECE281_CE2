@@ -9,6 +9,10 @@ A decoder is a device which takes in binary inputs and returns the information i
 ## Schematic of a Decoder
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder%20Schematic.png "Decoder Schematic")
 
+## Truth Table of a Decoder
+The truth table shows the functionality of a decoder; inputs are taken in and the decoder returns unique outputs.
+![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder%20Truth%20Table.PNG "Decoder Truth Table")
+
 ## Structural Decoder
 The first decoder that was made was using structural architecture.  This means that the decoder consisted of various components that were put together using VHDL.  Three VHDL modules were created: *inverter*, *and3*, *Decoder_Structural*.  As it sounds, the *inverter* takes an input and outputs the inverse of the input.  *and3* takes in three inputs and outputs the AND of the three.  Finally, *Decoder_Structural* is used to combine the other two modules in such a way to program a functional decoder.
 
@@ -52,9 +56,11 @@ A *for-loop* was used to test the eight input combinations.  Starting with *000*
 ## Structural Decoder Results
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Structural%20Simulation%20Results.PNG "Structural Decoder Results")
 
-These results may be compared with the table above or the waveform below.
+These results may be compared with the truth table above or the waveform below.
 
 ## Structural Decoder Waveform
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Structural%20Simulation%20Waveform.PNG "Structural Decoder Waveform")
 
-The three inputs, I0, I1, and EN are represented by the count signal.
+The three inputs, I0, I1, and EN are represented by the count signal, and therefore are not shown to actually take in the input values for the simulation.
+
+

@@ -79,6 +79,7 @@ Afterwards, I created a test bench for the behavioral decoder.  I used the same 
 
 ## Behavioral Decoder Results
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Behavioral%20Simulation%20Results.PNG "Behavioral Decoder Results")
+
 SAME AS ABOVE!!! NO WAY!
 
 ## Behavioral Decoder Waveform

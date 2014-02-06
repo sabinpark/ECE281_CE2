@@ -79,9 +79,11 @@ Afterwards, I created a test bench for the behavioral decoder.  I used the same 
 
 ## Behavioral Decoder Results
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Behavioral%20Simulation%20Results.PNG "Behavioral Decoder Results")
+SAME AS ABOVE!!! NO WAY!
 
 ## Behavioral Decoder Waveform
 ![alt text](https://raw2.github.com/sabinpark/ECE281_CE2/master/Decoder_Behavioral%20Simulation%20Waveform.PNG "Behavioral Decoder Waveform")
+SAME AS ABOVE!
 
 ## Conclusion
 To review, a decoder is a device that takes in inputs, converts the inputs and returns unique output values.  The third input, EN, stands for enabler.  The enabler is used to limit, or distinguish the unique outputs.  If EN is 0, then the entire output will have to be 0 as well because all of the AND gates are connected to the enabler.  By connecting the enabler with each of the other inputs and utilizing the two NOT gates, we have a way to return three unique outputs.

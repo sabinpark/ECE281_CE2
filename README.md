@@ -89,4 +89,7 @@ SAME AS ABOVE!
 ## Conclusion
 To review, a decoder is a device that takes in inputs, converts the inputs and returns unique output values.  The third input, EN, stands for enabler.  The enabler is used to limit, or distinguish the unique outputs.  If EN is 0, then the entire output will have to be 0 as well because all of the AND gates are connected to the enabler.  By connecting the enabler with each of the other inputs and utilizing the two NOT gates, we have a way to return three unique outputs.
 
-Decoders are used in numerous ways.  If certain information is encoded, the decoder can take the information and return the original information before it was encoded.  For example, this process is used by cable TV companies who only want to allow pay-per-view customers to have access to a movie or TV show.  The streaming of the movie/show is encoded by the company and the viewer's decoder will return the decoded/viewable movie/show.
+Decoders are used in numerous ways.  If certain information is encoded, the decoder can take the information and return the original information before it was encoded.  For example, this process is used by cable TV companies who only want to allow pay-per-view customers to have access to a movie or TV show.  The streaming of the movie/show is encoded by the company and the viewer's decoder will return the decoded/viewable movie/show.  
+
+***UPDATE***
+Decoders are also used in ALUs (Arithmetic Logic Units), where the decoder takes in registers and feeds it to the ALU.  The input (and therefore, the output) of the ALU is dependent on what the decoder outputs to the ALU.
